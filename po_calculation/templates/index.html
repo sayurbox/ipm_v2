@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplier Delivery Date Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .collapsible {
+            cursor: pointer;
+            border: 1px solid #ccc;
+            outline: none;
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: auto;
+            display: inline-block;
+        }
+
+        h1, h2, h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #0069d9;
+        }
+
+        .date-header {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Supplier Delivery Date Service</h1>
+    <button id="generate-data-btn">Generate SKU Codes and Sales Data</button>
+    <button id="generate-forecast-data-btn">Generate Forecast Data</button>
+    <button type="button" class="collapsible">Show/Hide SKU Codes</button>
+    <table id="sku-codes" style="display: none;">
+        <thead></thead>
+        <tbody></tbody>
+    </table>
+    <h2>Sales Data</h2>
+    <table id="sales-data">
+        <thead></thead>
+        <tbody></tbody>
+    </table>
+    <h2>Forecast Data</h2>
+    <table id="forecast-data">
+        <thead></thead>
+        <tbody></tbody>
+    </table>
+    <script>
+      function getPastDateAsString(daysAgo) {
+          const date = new Date();
+          date.setDate(date.getDate() - daysAgo);
+          return date.toISOString().split('T')[0];
+      }
+  
+
+  
+      async function updateTableWithData() {
+          const salesResponse = await fetch('/generate_sample_sales_data');
+          const forecastResponse = await fetch('/generate_forecast_data');
+          const salesData = await salesResponse.json();
+          const forecastData = await forecastResponse.json();
+  
+          const salesDataTable = document.getElementById('sales-data');
+          const forecastDataTable = document.getElementById('forecast-data');
+  
+          const salesTableHead = salesDataTable.getElementsByTagName('thead')[0];
+          const salesTableBody = salesDataTable.getElementsByTagName('tbody')[0];
+          const forecastTableHead = forecastDataTable.getElementsByTagName('thead')[0];
+          const forecastTableBody = forecastDataTable.getElementsByTagName('tbody')[0];
+  
+          salesTableHead.innerHTML = '';
+          salesTableBody.innerHTML = '';
+          forecastTableHead.innerHTML = '';
+          forecastTableBody.innerHTML = '';
+  
+          const salesHeaderRow = salesTableHead.insertRow();
+          const forecastHeaderRow = forecastTableHead.insertRow();
+  
+          const skuSalesHeaderCell = salesHeaderRow.insertCell(0);
+          skuSalesHeaderCell.textContent = 'SKU Code';
+          const skuForecastHeaderCell = forecastHeaderRow.insertCell(0);
+          skuForecastHeaderCell.textContent = 'SKU Code';
+  
+          for (let i = 30; i >= 1; i--) {
+              const dateHeaderCellSales = salesHeaderRow.insertCell();
+              dateHeaderCellSales.textContent = new Date(getPastDateAsString(i)).toLocaleDateString();
+              dateHeaderCellSales.classList.add('date-header');
+  
+              const dateHeaderCellForecast = forecastHeaderRow.insertCell();
+              dateHeaderCellForecast.textContent = new Date(getPastDateAsString(i)).toLocaleDateString();
+              dateHeaderCellForecast.classList.add('date-header');
+          }
+  
+          for (const sku in salesData) {
+              const salesRow = salesTableBody.insertRow();
+              const forecastRow = forecastTableBody.insertRow();
+  
+              const skuCellSales = salesRow.insertCell(0);
+              skuCellSales.textContent = sku;
+              const skuCellForecast = forecastRow.insertCell(0);
+              skuCellForecast.textContent = sku;
+  
+              for (const dailySales of salesData[sku]) {
+                  const salesDataCell = salesRow.insertCell();
+                  salesDataCell.textContent = dailySales;
+              }
+  
+              for (const dailyForecast of forecastData[sku]) {
+                  const forecastDataCell = forecastRow.insertCell();
+                  forecastDataCell.textContent = dailyForecast;
+              }
+          }
+      }
+
+      async function populateSkuCodesTable() {
+        const response = await fetch('/get_sku_codes');
+        const skuCodes = await response.json();
+
+        const skuCodesTable = document.getElementById('sku-codes');
+        const skuCodesTbody = skuCodesTable.getElementsByTagName('tbody')[0];
+
+        let row;
+        for (let i = 0; i < skuCodes.length; i++) {
+            if (i % 10 === 0) {
+                row = skuCodesTbody.insertRow();
+            }
+            const cell = row.insertCell();
+            cell.textContent = skuCodes[i];
+        }
+    }
+  
+      document.getElementById('generate-data-btn').onclick = updateTableWithData;
+      document.getElementById('generate-forecast-data-btn').onclick = updateTableWithData;
+      document.querySelector('.collapsible').addEventListener('click', function() {
+          this.classList.toggle('active');
+          const skuCodesTable = document.getElementById('sku-codes');
+          skuCodesTable.style.display = skuCodesTable.style.display === 'none' ? 'table' : 'none';
+      });
+      populateSkuCodesTable();
+  </script>
+  
+</body>
+</html>

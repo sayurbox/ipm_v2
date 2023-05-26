@@ -1,0 +1,402 @@
+{
+  "634163": {
+    "shelf_life": 146,
+    "yield_factor": 0.77
+  },
+  "456869": {
+    "shelf_life": 178,
+    "yield_factor": 0.87
+  },
+  "171305": {
+    "shelf_life": 38,
+    "yield_factor": 0.78
+  },
+  "284262": {
+    "shelf_life": 107,
+    "yield_factor": 0.67
+  },
+  "594563": {
+    "shelf_life": 41,
+    "yield_factor": 0.75
+  },
+  "881597": {
+    "shelf_life": 95,
+    "yield_factor": 0.67
+  },
+  "552968": {
+    "shelf_life": 28,
+    "yield_factor": 0.94
+  },
+  "834205": {
+    "shelf_life": 43,
+    "yield_factor": 0.77
+  },
+  "508877": {
+    "shelf_life": 145,
+    "yield_factor": 0.73
+  },
+  "574586": {
+    "shelf_life": 94,
+    "yield_factor": 0.93
+  },
+  "870147": {
+    "shelf_life": 89,
+    "yield_factor": 1.0
+  },
+  "449320": {
+    "shelf_life": 96,
+    "yield_factor": 1.0
+  },
+  "548235": {
+    "shelf_life": 31,
+    "yield_factor": 0.94
+  },
+  "866731": {
+    "shelf_life": 73,
+    "yield_factor": 0.96
+  },
+  "899104": {
+    "shelf_life": 64,
+    "yield_factor": 0.99
+  },
+  "162627": {
+    "shelf_life": 150,
+    "yield_factor": 0.78
+  },
+  "119392": {
+    "shelf_life": 14,
+    "yield_factor": 0.88
+  },
+  "118998": {
+    "shelf_life": 77,
+    "yield_factor": 0.62
+  },
+  "260815": {
+    "shelf_life": 36,
+    "yield_factor": 0.94
+  },
+  "624509": {
+    "shelf_life": 103,
+    "yield_factor": 0.7
+  },
+  "816985": {
+    "shelf_life": 68,
+    "yield_factor": 0.99
+  },
+  "114063": {
+    "shelf_life": 162,
+    "yield_factor": 0.63
+  },
+  "222116": {
+    "shelf_life": 30,
+    "yield_factor": 0.69
+  },
+  "956223": {
+    "shelf_life": 81,
+    "yield_factor": 0.96
+  },
+  "390094": {
+    "shelf_life": 137,
+    "yield_factor": 0.7
+  },
+  "397300": {
+    "shelf_life": 91,
+    "yield_factor": 0.94
+  },
+  "216635": {
+    "shelf_life": 37,
+    "yield_factor": 0.84
+  },
+  "873326": {
+    "shelf_life": 32,
+    "yield_factor": 0.72
+  },
+  "846065": {
+    "shelf_life": 163,
+    "yield_factor": 0.67
+  },
+  "204502": {
+    "shelf_life": 1,
+    "yield_factor": 0.77
+  },
+  "894031": {
+    "shelf_life": 39,
+    "yield_factor": 0.97
+  },
+  "256595": {
+    "shelf_life": 177,
+    "yield_factor": 0.6
+  },
+  "520879": {
+    "shelf_life": 38,
+    "yield_factor": 0.94
+  },
+  "478536": {
+    "shelf_life": 93,
+    "yield_factor": 0.77
+  },
+  "931047": {
+    "shelf_life": 153,
+    "yield_factor": 0.73
+  },
+  "930606": {
+    "shelf_life": 93,
+    "yield_factor": 0.87
+  },
+  "312007": {
+    "shelf_life": 3,
+    "yield_factor": 0.7
+  },
+  "965343": {
+    "shelf_life": 39,
+    "yield_factor": 0.64
+  },
+  "881186": {
+    "shelf_life": 180,
+    "yield_factor": 0.89
+  },
+  "720226": {
+    "shelf_life": 177,
+    "yield_factor": 0.89
+  },
+  "321149": {
+    "shelf_life": 108,
+    "yield_factor": 0.94
+  },
+  "122754": {
+    "shelf_life": 125,
+    "yield_factor": 0.64
+  },
+  "429615": {
+    "shelf_life": 143,
+    "yield_factor": 0.78
+  },
+  "849574": {
+    "shelf_life": 161,
+    "yield_factor": 0.69
+  },
+  "512679": {
+    "shelf_life": 94,
+    "yield_factor": 0.79
+  },
+  "622877": {
+    "shelf_life": 102,
+    "yield_factor": 0.72
+  },
+  "607188": {
+    "shelf_life": 161,
+    "yield_factor": 0.86
+  },
+  "596481": {
+    "shelf_life": 14,
+    "yield_factor": 0.66
+  },
+  "931481": {
+    "shelf_life": 119,
+    "yield_factor": 0.9
+  },
+  "546045": {
+    "shelf_life": 130,
+    "yield_factor": 0.74
+  },
+  "595656": {
+    "shelf_life": 97,
+    "yield_factor": 0.67
+  },
+  "379673": {
+    "shelf_life": 147,
+    "yield_factor": 0.74
+  },
+  "227154": {
+    "shelf_life": 140,
+    "yield_factor": 0.68
+  },
+  "897376": {
+    "shelf_life": 80,
+    "yield_factor": 0.71
+  },
+  "911559": {
+    "shelf_life": 40,
+    "yield_factor": 0.6
+  },
+  "590067": {
+    "shelf_life": 76,
+    "yield_factor": 0.65
+  },
+  "801737": {
+    "shelf_life": 15,
+    "yield_factor": 0.89
+  },
+  "308414": {
+    "shelf_life": 132,
+    "yield_factor": 0.69
+  },
+  "822154": {
+    "shelf_life": 103,
+    "yield_factor": 0.82
+  },
+  "742220": {
+    "shelf_life": 19,
+    "yield_factor": 0.72
+  },
+  "477712": {
+    "shelf_life": 37,
+    "yield_factor": 0.94
+  },
+  "778390": {
+    "shelf_life": 83,
+    "yield_factor": 0.65
+  },
+  "591385": {
+    "shelf_life": 51,
+    "yield_factor": 0.78
+  },
+  "706243": {
+    "shelf_life": 41,
+    "yield_factor": 0.7
+  },
+  "246798": {
+    "shelf_life": 106,
+    "yield_factor": 0.8
+  },
+  "861606": {
+    "shelf_life": 51,
+    "yield_factor": 0.94
+  },
+  "455276": {
+    "shelf_life": 49,
+    "yield_factor": 0.71
+  },
+  "442231": {
+    "shelf_life": 155,
+    "yield_factor": 0.88
+  },
+  "920381": {
+    "shelf_life": 10,
+    "yield_factor": 0.76
+  },
+  "136268": {
+    "shelf_life": 87,
+    "yield_factor": 0.78
+  },
+  "752210": {
+    "shelf_life": 123,
+    "yield_factor": 0.84
+  },
+  "699729": {
+    "shelf_life": 164,
+    "yield_factor": 0.65
+  },
+  "434001": {
+    "shelf_life": 159,
+    "yield_factor": 0.93
+  },
+  "172551": {
+    "shelf_life": 82,
+    "yield_factor": 0.86
+  },
+  "310965": {
+    "shelf_life": 19,
+    "yield_factor": 0.94
+  },
+  "760406": {
+    "shelf_life": 9,
+    "yield_factor": 0.98
+  },
+  "496151": {
+    "shelf_life": 78,
+    "yield_factor": 0.9
+  },
+  "885621": {
+    "shelf_life": 163,
+    "yield_factor": 0.77
+  },
+  "235332": {
+    "shelf_life": 34,
+    "yield_factor": 0.9
+  },
+  "692773": {
+    "shelf_life": 164,
+    "yield_factor": 0.85
+  },
+  "274876": {
+    "shelf_life": 147,
+    "yield_factor": 0.92
+  },
+  "186184": {
+    "shelf_life": 148,
+    "yield_factor": 0.74
+  },
+  "767544": {
+    "shelf_life": 66,
+    "yield_factor": 0.87
+  },
+  "332086": {
+    "shelf_life": 99,
+    "yield_factor": 0.84
+  },
+  "343362": {
+    "shelf_life": 68,
+    "yield_factor": 0.94
+  },
+  "485676": {
+    "shelf_life": 100,
+    "yield_factor": 0.8
+  },
+  "869334": {
+    "shelf_life": 67,
+    "yield_factor": 0.73
+  },
+  "750322": {
+    "shelf_life": 159,
+    "yield_factor": 0.89
+  },
+  "686267": {
+    "shelf_life": 155,
+    "yield_factor": 0.73
+  },
+  "493359": {
+    "shelf_life": 162,
+    "yield_factor": 0.89
+  },
+  "447194": {
+    "shelf_life": 167,
+    "yield_factor": 0.74
+  },
+  "103668": {
+    "shelf_life": 67,
+    "yield_factor": 0.92
+  },
+  "171828": {
+    "shelf_life": 75,
+    "yield_factor": 0.81
+  },
+  "432119": {
+    "shelf_life": 175,
+    "yield_factor": 0.63
+  },
+  "416633": {
+    "shelf_life": 62,
+    "yield_factor": 0.95
+  },
+  "181870": {
+    "shelf_life": 13,
+    "yield_factor": 0.68
+  },
+  "147240": {
+    "shelf_life": 109,
+    "yield_factor": 0.85
+  },
+  "975139": {
+    "shelf_life": 9,
+    "yield_factor": 0.63
+  },
+  "240378": {
+    "shelf_life": 16,
+    "yield_factor": 0.85
+  },
+  "100754": {
+    "shelf_life": 134,
+    "yield_factor": 0.89
+  }
+}
